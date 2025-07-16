@@ -1,0 +1,95 @@
+div{
+    background-color: #A87C7C;
+    text-align:justify
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    height:300px;
+    width:900px;
+    border-style:outset;
+    border-width: 6px;
+    border-color: beige;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    
+}
+h1{
+    background-color: #3E3232;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border-style:inset;
+    word-spacing:2px;
+    text-align: center;
+    width:900px;
+    border-width: 6px;
+    border-color: beige;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+*{
+    color:#F9F3EF;
+}
+body{
+    background-color:#432E54 ;
+}
+.button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2),
+              0 0 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.button:hover {
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.2),
+              0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(p.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+  }
